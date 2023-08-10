@@ -4,46 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/985f49428b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="wrapper">
-        <!-- navbar started -->
-        <div id="navtop" class="w-full">
-            <div id="nav" class="flex w-[980px] mx-auto justify-between items-center h-16 ">
-                <div id="links" class="flex gap-10 text-white">
-                  <div class="flex flex-col gap-1">
-                    <a href="#">Home</a>
-                    <div class="h-[1px] w-full bg-white "></div>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <a href="#">About Me</a>
-                    <div class="h-[1px] w-full bg-white"></div>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <a href="#">Project</a>
-                    <div class="h-[1px] w-full bg-white"></div>
-                  </div>
-                  <div class="flex flex-col gap-1">
-                    <a href="#">Contact</a>
-                    <div class="h-[1px] w-full bg-white"></div>
-                  </div>
-                </div>
-                <div id="hireBtn" class="flex gap-6">
-                  <button class="shadow-xl w-[8rem] h-[2rem] bg-blue-950 text-white rounded-lg">Mode change</button>
-                  <button class="shadow-xl w-[10rem] h-[2rem] bg-blue-950 text-white rounded-lg">Download Resume</button>
-                </div>
-              </div>
+      <!-- navbar started -->
+      <div id="navtop" class="w-full">
+        <div
+          id="nav"
+          class="flex w-[980px] mx-auto justify-between items-center h-16"
+        >
+          <div id="links" class="flex gap-10 text-white">
+            <div class="flex flex-col gap-1">
+              <a href="#">Home</a>
+              <div class="h-[1px] w-full bg-white"></div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <a href="#">About Me</a>
+              <div class="h-[1px] w-full bg-white"></div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <a href="#">Project</a>
+              <div class="h-[1px] w-full bg-white"></div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <a href="#">Contact</a>
+              <div class="h-[1px] w-full bg-white"></div>
+            </div>
+          </div>
+          <div id="hireBtn" class="flex gap-6">
+            <button
+              class="shadow-xl w-[8rem] h-[2rem] bg-blue-950 text-white rounded-lg"
+            >
+              Mode change
+            </button>
+            <button
+              class="shadow-xl w-[10rem] h-[2rem] bg-blue-950 text-white rounded-lg"
+            >
+              Download Resume
+            </button>
+          </div>
         </div>
-      
-       <!-- hero section start    -->
+      </div>
+
+      <!-- hero section start    -->
       <div id="heroSection" class="relative">
         <div id="heroImg" class="absolute -top-16 left-0-0 -z-10">
-            <img src="./assets/1690564004992.png" alt="Profile IMG" class="w-[45rem] ">
+          <img
+            src="./assets/1690564004992.png"
+            alt="Profile IMG"
+            class="w-[45rem]"
+          />
         </div>
-        <div id="heroText" class="absolute top-[10rem] right-[26rem]">
-            <p class="">Hello,</p>
-            <h1 class="">I'm Satyanarayan Sen</h1>
-            <p>Front-End Web Developer</p>
+        <div
+          id="heroText"
+          class="absolute top-[6rem] right-[2rem] flex flex-col gap-5"
+        >
+          <p
+            class="font-medium bg-[#8062D6] w-16 px-3 py-1 rounded text-white"
+          >
+            Hello,
+          </p>
+          <h1 class="font-extrabold italic text-5xl">
+            I'm <span class="text-[#8062D6]">Satyanarayan Sen</span>
+          </h1>
+          <div id="role" class="flex gap-4">
+            <img src="./assets/mern logo.png" alt="" class="w-[60px]" />
+            <p class="font-bold">
+              <span class="font-extrabold text-[#8062D6]">MERN</span> Stack
+              Developer
+            </p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
+            <p>Figma design to react web app</p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
+            <p>Responsive Design</p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
+            <p>24 X 7 Support</p>
+          </div>
+          <a href="" class="w-[7rem] text-white px-6 py-2 bg-[#322653] rounded-md">Hire Me</a>
         </div>
       </div>
     </div>
