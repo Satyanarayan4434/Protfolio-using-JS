@@ -17,88 +17,155 @@
   </head>
   <body>
     <div id="wrapper">
-      <!-- navbar started -->
-      <div id="navtop" class="w-full">
-        <div
-          id="nav"
-          class="flex w-[980px] mx-auto justify-between items-center h-16"
-        >
-          <div id="links" class="flex gap-10 text-white">
-            <div class="flex flex-col gap-1">
-              <a href="#">Home</a>
-              <div class="h-[1px] w-full bg-white"></div>
-            </div>
-            <div class="flex flex-col gap-1">
-              <a href="#">About Me</a>
-              <div class="h-[1px] w-full bg-white"></div>
-            </div>
-            <div class="flex flex-col gap-1">
-              <a href="#">Project</a>
-              <div class="h-[1px] w-full bg-white"></div>
-            </div>
-            <div class="flex flex-col gap-1">
-              <a href="#">Contact</a>
-              <div class="h-[1px] w-full bg-white"></div>
-            </div>
-          </div>
-          <div id="hireBtn" class="flex gap-6">
-            <button
-              class="shadow-xl w-[8rem] h-[2rem] bg-blue-950 text-white rounded-lg"
-            >
-              Mode change
-            </button>
-            <button
-              class="shadow-xl w-[10rem] h-[2rem] bg-blue-950 text-white rounded-lg"
-            >
-              Download Resume
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- hero section start    -->
-      <div id="heroSection" class="relative">
-        <div id="heroImg" class="absolute -top-16 left-0-0 -z-10">
-          <img
-            src="./assets/1690564004992.png"
-            alt="Profile IMG"
-            class="w-[45rem]"
-          />
-        </div>
-        <div
-          id="heroText"
-          class="absolute top-[6rem] right-[2rem] flex flex-col gap-5"
-        >
-          <p
-            class="font-medium bg-[#8062D6] w-16 px-3 py-1 rounded text-white"
+      <div id="containner">
+        <!-- navbar started -->
+        <div id="navtop" class="w-full fixed z-10 transition-all duration-100">
+          <div
+            id="nav"
+            class="flex w-[980px] mx-auto justify-between items-center h-16"
           >
-            Hello,
-          </p>
-          <h1 class="font-extrabold italic text-5xl">
-            I'm <span class="text-[#8062D6]">Satyanarayan Sen</span>
-          </h1>
-          <div id="role" class="flex gap-4">
-            <img src="./assets/mern logo.png" alt="" class="w-[60px]" />
-            <p class="font-bold">
-              <span class="font-extrabold text-[#8062D6]">MERN</span> Stack
-              Developer
+            <div id="links" class="flex gap-10 text-white">
+              <div
+                class="flex flex-col gap-1 transition-all duration-200 group"
+              >
+                <a href="#">Home</a>
+                <div
+                  class="h-[1px] w-full bg-white transition-all duration-200 hidden group-hover:block"
+                ></div>
+              </div>
+              <div
+                class="flex flex-col gap-1 transition-all duration-200 group"
+              >
+                <a href="#">About Me</a>
+                <div
+                  class="h-[1px] w-full bg-white transition-all duration-200 hidden group-hover:block"
+                ></div>
+              </div>
+              <div
+                class="flex flex-col gap-1 transition-all duration-200 group"
+              >
+                <a href="#">Project</a>
+                <div
+                  class="h-[1px] w-full bg-white transition-all duration-200 hidden group-hover:block"
+                ></div>
+              </div>
+              <div
+                class="flex flex-col gap-1 transition-all duration-200 group"
+              >
+                <a href="#">Contact</a>
+                <div
+                  class="h-[1px] w-full bg-white transition-all duration-200 hidden group-hover:block"
+                ></div>
+              </div>
+            </div>
+            <div id="hireBtn" class="flex gap-6">
+              <button
+                class="shadow-xl w-[8rem] h-[2rem] bg-blue-950 text-white rounded-lg"
+              >
+                Mode change
+              </button>
+              <button
+                class="shadow-xl w-[10rem] h-[2rem] bg-blue-950 text-white rounded-lg"
+              >
+                Download Resume
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- hero section start    -->
+        <div id="heroSection" class="flex gap-10">
+          <div id="heroImg">
+            <img
+              src="./assets/1690564004992.png"
+              alt="Profile IMG"
+              class="w-[45rem]"
+            />
+          </div>
+          <div
+            id="heroText"
+            class=" flex flex-col gap-5 mt-[10rem]"
+          >
+            <p
+              class="font-medium bg-[#8062D6] w-16 px-3 py-1 rounded text-white"
+            >
+              Hello,
             </p>
+            <h1 class="font-extrabold italic text-5xl">
+              I'm <span class="text-[#8062D6]">Satyanarayan Sen</span>
+            </h1>
+            <div id="role" class="flex gap-4">
+              <img src="./assets/mern logo.png" alt="" class="w-[60px]" />
+              <p class="font-bold">
+                <span class="font-extrabold text-[#8062D6]">MERN</span> Stack
+                Developer
+              </p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i
+                class="fa-solid fa-circle-check fa-xl bl"
+                style="color: #b6989c"
+              ></i>
+              <p class="italic font-light text-sm">
+                Figma design to react web app
+              </p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i
+                class="fa-solid fa-circle-check fa-xl bl"
+                style="color: #b6989c"
+              ></i>
+              <p class="italic font-light text-sm">Responsive Design</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i
+                class="fa-solid fa-circle-check fa-xl bl"
+                style="color: #b6989c"
+              ></i>
+              <p class="italic font-light text-sm">24 X 7 Support</p>
+            </div>
+            <a
+              href=""
+              class="w-[7rem] text-white px-6 py-2 bg-[#322653] rounded-md hover:bg-[#b6989c] hover:text-black hover:font-extrabold transition-all duration-150 hover:shadow-xl shadow-md"
+              >Hire Me</a
+            >
+            <button class="flex justify-center items-center relative mt-[8rem] animate-bounce">
+              <div class="w-11 h-11 rounded-full bg-[#b6989c] opacity-70 ">
+                <div class="w-9 h-9 rounded-full bg-[#b13c4c] opacity-60 absolute top-[4px] left-[16.2rem] flex ">
+                  <i class="fa-solid fa-arrow-right fa-rotate-90 "></i>
+                </div>
+              </div>
+            </button>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
-            <p>Figma design to react web app</p>
+          <p
+            class="text-[11rem] font-extrabold absolute top-[43.5rem] left-12 text-[#322653]"
+          >
+            <span class="text-white">Born To</span> Code.
+          </p>
+        </div>
+
+        <!-- about me section -->
+        <div id="about" class="flex items-center w-[1080px] mx-auto gap-16 mt-10">
+          <div class="w-[50rem]">
+            <img src="./assets/About graphic.png" alt="" class="origin-left"/>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
-            <p>Responsive Design</p>
+          <div class="w-[50rem] flex flex-col gap-3 items-start">
+            <h1 class="font-bold text-2xl text-[#322653]">About Me</h1>
+            <div class="h-[1px] w-[7.5rem] bg-[#b6989c]"></div>
+            <p class="font-medium">
+              As a passionate and ambitious front-end web developer, I am a
+              fresher with a solid foundation in HTML, CSS, and JavaScript. I have
+              also gained hands-on experience in React.js, Redux Toolkit, and
+              Tailwind CSS during my learning journey. Eager to contribute my
+              skills and creativity to real-world projects, I am enthusiastic
+              about creating user-friendly and visually appealing web
+              applications.
+            </p>
+            <button class="bg-[#322653] text-white px-4 py-3 hover:rounded-md hover:bg-[#b6989c] hover:text-black hover:font-bold transition-all delay-150">Download CV</button>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fa-solid fa-circle-check fa-xl bl" style="color: #b6989c;"></i>
-            <p>24 X 7 Support</p>
-          </div>
-          <a href="" class="w-[7rem] text-white px-6 py-2 bg-[#322653] rounded-md">Hire Me</a>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
